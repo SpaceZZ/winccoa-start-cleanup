@@ -21,9 +21,7 @@
 main()
 {
   DebugTN("Started");
-  //first run
   removeDpt();
-  //cleanup
   removeDpt();
   DebugTN("Finished");
 }
@@ -31,7 +29,7 @@ main()
 // removes Dpts
 void removeDpt()
 {
-  dyn_string existingDpts, toBeDeletedDpts;
+  dyn_string existingDpts;
 
   existingDpts = dpTypes("*");
 
